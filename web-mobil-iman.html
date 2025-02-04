@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Mobil Iman</title>
+
+    <link rel="stylesheet" href="styles-bundles/header.css">
+    <link rel="stylesheet" href="styles-bundles/body.css">
+    <link rel="stylesheet" href="styles-bundles/general.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img width="30" height="30" src="https://img.icons8.com/color/48/mitsubishi.png" alt="mitsubishi"/>
+          Mhd Iman Auto
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">Popular</a>
+            </li>
+            <li class="nav__item">
+              <a href="#featured" class="nav__link">Featured</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+
+    </header>
+
+    <main class="main">
+      <!--=================================home====================================-->
+      <section class="home section" id="home">
+        <div class="shape shape__big"></div>
+        <div class="shape shape__small"></div>
+
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Pilihan Mobil Mitsubishi Terbaik
+            </h1>
+
+            <h2 class="home__subtitle">
+              Mitsubishi by Mhd Iman Auto
+            </h2>
+
+            <h3 class="home__elec">
+              <i class="ri-whatsapp-line"></i><a href="https://wa.me/6281264646065">Chat WhatsApp</a>
+            </h3>
+          </div>
+
+          <img src="foto-homeimg/pajerodakar.png" alt="" class="home__img">
+
+          <div class="home__car">
+            <div class="home__car-data">
+              <div class="home__car-icon">
+                <i class="ri-tools-fill"></i>
+              </div>
+              <h2 class="home__car-number">50.000 KM</h2>
+              <h3 class="home__car-name">Gratis Jasa Servis</h3>
+            </div>
+
+            <div class="home__car-data">
+              <div class="home__car-icon">
+                <i class="ri-currency-line"></i>
+              </div>
+              <h2 class="home__car-number">15%</h2>
+              <h3 class="home__car-name">DP Ringan</h3>
+            </div>
+
+            <div class="home__car-data">
+              <div class="home__car-icon">
+                <i class="ri-shield-cross-line"></i>
+              </div>
+              <h2 class="home__car-number">100.000 KM</h2>
+              <h3 class="home__car-name">Waranty</h3>
+            </div>
+          </div>
+
+          <a href="#about" class="home__button">START</a>
+        </div>
+      </section>
+
+      <!--=================================about====================================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__group">
+            <img src="foto-about/maxresdefault.jpg" alt="" class="about__img">
+
+            <div class="about__card">
+              <h3 class="about__card-title">Mhd Iman Auto</h3>
+              <p class="about__card-description">
+                0812-6464-6065
+              </p>
+            </div>
+          </div>
+
+          <div class="about__data">
+            <h2 class="about__title">
+              Ekspresikan <br> Petualanganmu
+            </h2>
+
+            <p class="about__description">
+              Bersiaplah melintasi medan apapun dengan kendaraan yang penuh karakter, sesuai dengan gaya dan kepribadian petualangmu.
+            </p>
+
+            <a href="#popular" class="button">Lihat Mobil</a>
+          </div>
+        </div>
+      </section>
+
+      <!--=================================popular====================================-->
+      <section class="popular section" id="popular">
+        <h2 class="section__title">
+          Pilih Mobil <br> Mitsubishi Anda
+        </h2>
+
+      <div class="popular__container container swiper">
+        <div class="swiper-wrapper">
+          <article class="popular__card swiper-slide">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="popular__title">Pajero</h1>
+            <h3 class="popular__subtitle">Dakar Ultimate 4x4</h3>
+
+            <img src="foto-mobil/pajero/Pajero-Dakar-Ultimate-4x4.png" alt="" class="popular__img">
+
+            <div class="popular__data">
+              <div class="popular__data-group">
+                <i class="ri-dashboard-3-line"></i> 134 hp
+              </div>
+              <div class="popular__data-group">
+                <i class="ri-fire-line"></i> 2500 cc
+              </div>
+              <div class="popular__data-group">
+                <i class="ri-line-chart-fill"></i> 324 Nm/ 4.000 RPM
+              </div>
+            </div>
+
+            <h3 class="popular__price">IDR 714.850.000</h3>
+
+            <button class="button popular__button">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </article>
+
+          <article class="popular__card swiper-slide">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="popular__title">Xpander</h1>
+            <h3 class="popular__subtitle">Cross</h3>
+
+            <img src="foto-mobil/xpander-cross/xpander-cross.png" alt="" class="popular__img">
+
+            <div class="popular__data">
+              <div class="popular__data-group">
+                <i class="ri-dashboard-3-line"></i> 104 hp
+              </div>
+              <div class="popular__data-group">
+                <i class="ri-fire-line"></i> 1.500 cc
+              </div>
+              <div class="popular__data-group">
+                <i class="ri-line-chart-fill"></i> 141 Nm/ 6.000 RPM
+              </div>
+            </div>
+
+            <h3 class="popular__price">IDR 329.000.000</h3>
+
+            <button class="button popular__button">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </article>
+
+          <article class="popular__card swiper-slide">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="popular__title">XForce</h1>
+            <h3 class="popular__subtitle">Ultimate Diamond</h3>
+
+            <img src="foto-mobil/xforce/Xforce-diamond.png" alt="" class="popular__img">
+
+            <div class="popular__data">
+              <div class="popular__data-group">
+                <i class="ri-dashboard-3-line"></i> 104 hp
+              </div>
+              <div class="popular__data-group">
+                <i class="ri-fire-line"></i> 1.500 cc
+              </div>
+              <div class="popular__data-group">
+                <i class="ri-line-chart-fill"></i> 141 Nm/ 6.000 RPM
+              </div>
+            </div>
+
+            <h3 class="popular__price">IDR 426.350.000</h3>
+
+            <button class="button popular__button">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </article>
+
+          <article class="popular__card swiper-slide">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="popular__title">Triton</h1>
+            <h3 class="popular__subtitle">Ultimate Double Cabin</h3>
+
+            <img src="foto-mobil/triton/triton-ultimate-double-cabin.png" alt="" class="popular__img">
+
+            <div class="popular__data">
+              <div class="popular__data-group">
+                <i class="ri-dashboard-3-line"></i> 148 hp
+              </div>
+              <div class="popular__data-group">
+                <i class="ri-fire-line"></i> 2.500 cc
+              </div>
+              <div class="popular__data-group">
+                <i class="ri-line-chart-fill"></i> 330 Nm/ 3.500 RPM
+              </div>
+            </div>
+
+            <h3 class="popular__price">IDR 531.000.000</h3>
+
+            <button class="button popular__button">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </article>
+
+          <article class="popular__card swiper-slide">
+            <div class="shape shape__smaller"></div>
+
+            <h1 class="popular__title">L300</h1>
+            <h3 class="popular__subtitle">FD</h3>
+
+            <img src="foto-mobil/l300/l300-fd.png" alt="" class="popular__img">
+
+            <div class="popular__data">
+              <div class="popular__data-group">
+                <i class="ri-dashboard-3-line"></i> 98 hp
+              </div>
+              <div class="popular__data-group">
+                <i class="ri-fire-line"></i> 2.500 cc
+              </div>
+              <div class="popular__data-group">
+                <i class="ri-line-chart-fill"></i> 200 Nm/ 3.500 RPM
+              </div>
+            </div>
+
+            <h3 class="popular__price">IDR 245.000.000</h3>
+
+            <button class="button popular__button">
+              <i class="ri-shopping-cart-line"></i>
+            </button>
+          </article>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      </section>
+      <!--=================================featured====================================-->
+      <section class="featured section" id="featured">
+        <h2 class="section-title">
+          Featured Mitsubishi Types
+        </h2>
+
+        <div class="featured__container container">
+          <ul class="featured__filters">
+            <li>
+              <button class="featured__item active-featured" data-filter="all">
+                <span>All</span>
+              </button>
+            </li>
+            <li>
+              <button class="featured__item" data-filter=".canter">
+                <img src="icon-mobil/Canter-Logo-Vector.svg-.png" alt="">
+              </button>
+            </li>
+            <li>
+              <button class="featured__item" data-filter=".pajero">
+                <img src="icon-mobil/pajero-icon.png" alt="">
+              </button>
+            </li>
+            <li>
+              <button class="featured__item" data-filter=".xpander">
+                <img src="icon-mobil/xpander-icon.png" alt="">
+              </button>
+            </li>
+            <li>
+              <button class="featured__item" data-filter=".triton">
+                <img src="icon-mobil/triton-icon.png" alt="">
+              </button>
+            </li>
+            <li>
+              <button class="featured__item" data-filter=".l300">
+                <img src="icon-mobil/l300-icon.png" alt="">
+              </button>
+            </li>
+            <li>
+              <button class="featured__item" data-filter=".xforce">
+                <img src="icon-mobil/x-force-icon.png" alt="">
+              </button>
+            </li>
+          </ul>
+
+          <div class="featured__content grid">
+            <article class="featured__card mix canter">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="featured__title">Canter</h1>
+
+              <h3 class="featured__subtitle">FE75SHDX</h3>
+
+              <img src="foto-mobil/canter/fe75shdx.webp" alt="" class="featured__img">
+
+              <h3 class="featured__price">IDR 531.000.000</h3>
+
+              <button class="button featured__button">
+                <i class="ri-shopping-cart-line"></i>
+              </button>
+            </article>
+
+            <article class="featured__card mix canter">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="featured__title">Canter</h1>
+
+              <h3 class="featured__subtitle">FE84SHDX</h3>
+
+              <img src="foto-mobil/canter/fe84shdx.webp" alt="" class="featured__img">
+
+              <h3 class="featured__price">IDR 548.500.000</h3>
+
+              <button class="button featured__button">
+                <i class="ri-shopping-cart-line"></i>
+              </button>
+            </article>
+
+            <article class="featured__card mix l300">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="featured__title">L300</h1>
+
+              <h3 class="featured__subtitle">Chassis</h3>
+
+              <img src="foto-mobil/l300/l300-chassis.png" alt="" class="featured__img">
+
+              <h3 class="featured__price">IDR 244.800.000</h3>
+
+              <button class="button featured__button">
+                <i class="ri-shopping-cart-line"></i>
+              </button>
+            </article>
+
+            <article class="featured__card mix l300">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="featured__title">L300</h1>
+
+              <h3 class="featured__subtitle">FD</h3>
+
+              <img src="foto-mobil/l300/l300-fd.png" alt="" class="featured__img">
+
+              <h3 class="featured__price">IDR 245.000.000</h3>
+
+              <button class="button featured__button">
+                <i class="ri-shopping-cart-line"></i>
+              </button>
+            </article>
+
+            <article class="featured__card mix pajero">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="featured__title">Pajero</h1>
+
+              <h3 class="featured__subtitle">Exceed</h3>
+
+              <img src="foto-mobil/pajero/pajero-exceed.webp" alt="" class="featured__img">
+
+              <h3 class="featured__price">IDR 590.900.000</h3>
+
+              <button class="button featured__button">
+                <i class="ri-shopping-cart-line"></i>
+              </button>
+            </article>
+
+            <article class="featured__card mix pajero">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="featured__title">Pajero</h1>
+
+              <h3 class="featured__subtitle">Elite Limited Edition</h3>
+
+              <img src="foto-mobil/pajero/pajero-elite-limited-editon.png" alt="" class="featured__img">
+
+              <h3 class="featured__price">IDR 661.000.000</h3>
+
+              <button class="button featured__button">
+                <i class="ri-shopping-cart-line"></i>
+              </button>
+            </article>
+
+            <article class="featured__card mix xpander">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="featured__title">Xpander</h1>
+
+              <h3 class="featured__subtitle">Ultimate</h3>
+
+              <img src="foto-mobil/xpander/xpander-ultimate.png" alt="" class="featured__img">
+
+              <h3 class="featured__price">IDR 327.000.000</h3>
+
+              <button class="button featured__button">
+                <i class="ri-shopping-cart-line"></i>
+              </button>
+            </article>
+
+            <article class="featured__card mix xpander">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="featured__title">Xpander</h1>
+
+              <h3 class="featured__subtitle">Exceed</h3>
+
+              <img src="foto-mobil/xpander/xpander-exceed.png" alt="" class="featured__img">
+
+              <h3 class="featured__price">IDR 281.000.000</h3>
+
+              <button class="button featured__button">
+                <i class="ri-shopping-cart-line"></i>
+              </button>
+            </article>
+
+            <article class="featured__card mix xforce">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="featured__title">XForce</h1>
+
+              <h3 class="featured__subtitle">Ultimate</h3>
+
+              <img src="foto-mobil/xforce/xforce-ultimate.png" alt="" class="featured__img">
+
+              <h3 class="featured__price">IDR 426.000.000</h3>
+
+              <button class="button featured__button">
+                <i class="ri-shopping-cart-line"></i>
+              </button>
+            </article>
+
+            <article class="featured__card mix xforce">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="featured__title">XForce</h1>
+
+              <h3 class="featured__subtitle">Exceed</h3>
+
+              <img src="foto-mobil/xforce/xforce-exceed.png" alt="" class="featured__img">
+
+              <h3 class="featured__price">IDR 382.000.000</h3>
+
+              <button class="button featured__button">
+                <i class="ri-shopping-cart-line"></i>
+              </button>
+            </article>
+
+            <article class="featured__card mix triton">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="featured__title">Triton</h1>
+
+              <h3 class="featured__subtitle">HDX Single Cabin</h3>
+
+              <img src="foto-mobil/triton/triton-hdx-single-cabin.png" alt="" class="featured__img">
+
+              <h3 class="featured__price">IDR 381.000.000</h3>
+
+              <button class="button featured__button">
+                <i class="ri-shopping-cart-line"></i>
+              </button>
+            </article>
+
+            <article class="featured__card mix triton">
+              <div class="shape shape__smaller"></div>
+
+              <h1 class="featured__title">Triton</h1>
+
+              <h3 class="featured__subtitle">HDX Double Cabin</h3>
+
+              <img src="foto-mobil/triton/triton-hdx-double-cabin.png" alt="" class="featured__img">
+
+              <h3 class="featured__price">IDR 430.000.000</h3>
+
+              <button class="button featured__button">
+                <i class="ri-shopping-cart-line"></i>
+              </button>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+    <!--=================================penawaran====================================-->
+    <section class="offer section">
+      <div class="offer__container container grid">
+        <img src="icon-mobil/offerdark.avif" alt="" class="offer__bg">
+
+        <div class="offer__data">
+          <h2 class="section__title offer__title">
+            Siapkah anda untuk mendapatkan <br> Tawaran Terbaik?
+          </h2>
+
+          <p class="offer__description">
+            Jangan sampai melewatkan informasi seputar mobil Mitsubishi, 
+            untuk mendapatkan penawaran terbaik.
+          </p>
+          <a href="https://wa.me/6281264646065" class="button">Chat WhatsApp</a>
+        </div>
+
+        <img src="foto-mobil/xpander-cross/xpander-cross.png" alt="" class="offer__img">
+      </div>
+      </section>
+
+    <!--=================================logos====================================-->
+      <section class="logos section">
+        <div class="logos__container container grid">
+          <div class="logos__content">
+            <img src="logo-mobil/pajero-logo.png" alt="" class="logos__img">
+          </div>
+          <div class="logos__content">
+            <img src="logo-mobil/xpander-logo.png" alt="" class="logos__img">
+          </div>
+          <div class="logos__content">
+            <img src="logo-mobil/x-force-logo.png" alt="" class="logos__img">
+          </div>
+          <div class="logos__content">
+            <img src="logo-mobil/triton-logo.png" alt="" class="logos__img">
+          </div>
+          <div class="logos__content">
+            <img src="logo-mobil/l300-logo.png" alt="" class="logos__img">
+          </div>
+          <div class="logos__content">
+            <img src="logo-mobil/canter-logo.png" alt="" class="logos__img">
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--=================================footer====================================-->
+    <footer class="footer section">
+      <div class="shape shape__big"></div>
+      <div class="shape shape__small"></div>
+
+      <div class="footer__container container grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">
+            <img width="30" height="30" src="https://img.icons8.com/color/48/mitsubishi.png" alt="mitsubishi"/> Mhd Iman Auto
+          </a>
+          <p class="footer__description">
+            Hanya disini anda akan mendapatkan <br> penawaran terbaik untuk setiap pembelian <br>
+            Mobil Mitsubishi.
+          </p>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">
+            Contact Us
+          </h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="https://wa.me/6281264646065" class="footer__link"><i class="ri-whatsapp-line"></i>WhatsApp</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link"><i class="ri-instagram-line"></i>Instagram</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link"><i class="ri-facebook-box-line"></i>Facebook</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link"><i class="ri-twitter-x-line"></i>Twitter</a>
+            </li>
+          </ul>
+        </div>
+
+          <div class="footer__content">
+            <h3 class="footer__title">
+              Services
+            </h3>
+
+            <ul class="footer__links">
+              <li>
+                <a href="#" class="footer__link"><i class="ri-map-pin-line"></i>Showroom</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"><i class="ri-car-line"></i>Mobil</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"><i class="ri-tools-line"></i>service</a>
+              </li>
+              <li>
+                <a href="#" class="footer__link"><i class="ri-news-line"></i>News</a>
+              </li>
+            </ul>
+          </div>
+      </div>
+
+      <span class="footer__copy">
+        &#169; Muhammad Iman. All rights reserved
+      </span>
+    </footer>
+
+    <!--=================================Scroll reveal====================================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=================================Swiper-JS====================================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=================================mixitup====================================-->
+    <script src="js-folder/mixitup.min.js"></script>
+
+    <!--=================================Main-JS====================================-->
+    <script src="js-folder/js-script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,554 @@
+/*=================================Home==========================================*/
+.home {
+    position: relative;
+    overflow: hidden;
+}
+
+.home__container {
+    position: relative;
+    padding-top: 4rem;
+    row-gap: 3rem;
+}
+
+.home__data {
+    text-align: center;
+}
+
+.home__title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 1rem;
+}
+
+.home__subtitle {
+    font-size: var(--h3-font-size);
+    margin-bottom: .25rem;
+}
+
+.home__elec {
+    font-size: var(--h3-font-size);
+    font-weight: 400;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+}
+
+.home__elec i {
+    color: rgb(3, 206, 3)
+}
+
+.home__img {
+    width: 500px;
+    justify-self: center;
+}
+
+.home__car {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+.home__car-name {
+    font-size: .725rem;
+    font-weight: 400;
+    color: var(--text-color-light);
+}
+
+.home__car-data {
+    text-align: center;
+}
+
+.home__car-number {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: .25rem;
+}
+
+.home__car-icon {
+    background-color: var(--container-color);
+    border-radius: 50%;
+    padding: .376rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: .75rem;
+}
+
+.home__button {
+    position: relative;
+    border: 2px solid hsl(0, 91%, 46%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    font-size: var(--small-font-size);
+    color: var(--white-color);
+    font-weight: var(--font-medium);
+}
+
+.home__button::before {
+    content: '';
+    border: 2px solid hsl(355, 95%, 41%);
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 12px hsl(355, 95%, 41%);
+    transition: .3s;
+    animation: button 3s infinite;
+}
+
+.home .shape__big,
+.home .shape__small {
+    position: absolute;
+}
+
+.home .shape__big {
+    left: -9rem;
+    top: -4rem;
+}
+
+.home .shape__small {
+    right: -10rem;
+    bottom: 3rem;
+}
+
+.shape__smaller {
+    width: 180px;
+    height: 180px;
+    filter: blur(64px);
+}
+
+@keyframes button {
+    0%{
+        box-shadow: 0 0 15px hsl(355, 95%, 41%);
+    }
+    50%{
+        box-shadow: 0 0 25px hsl(355, 95%, 41%);
+    }
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+    font-size: var(--normal-font-size);
+    transition: 3s;
+}
+
+.button:hover {
+    background-color: var(--first-color-alt);
+}
+
+/*=================================About==========================================*/
+.about__container {
+    row-gap: 6rem;
+}
+
+.about__group {
+    position: relative;
+}
+
+.about__img {
+    width: 510px;
+    border-radius: .5rem;
+}
+
+.about__card {
+    width: 180px;
+    position: absolute;
+    right: 0;
+    bottom: -2.5rem;
+    background-color: hsla(0, 0, 100%, .1);
+    backdrop-filter: blur(16px);
+    padding: 1rem .75rem;
+    text-align: center;
+    border-radius: 1.25rem;
+}
+
+.about__card-title {
+    font-size: var(--h3-font-size);
+    margin-bottom: .5rem;
+}
+
+.about__card-description {
+    font-size: var(--smaller-font-size);
+}
+
+.about__title {
+    text-align: initial;
+    margin-bottom: 2rem;
+}
+
+.about__description {
+    margin-bottom: 2rem;
+}
+
+/*=================================Popular==========================================*/
+.popular__container {
+    padding-top: 1rem;
+    left: 15px;
+    right: 15px;
+}
+
+.popular__card {
+    position: relative;
+    width: 238px;
+    background-color: var(--container-color);
+    padding: 2rem 1.5rem 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 3.5rem;
+    overflow: hidden;
+}
+
+.popular__card .shape__smaller {
+    position: absolute;
+    top: -2.5rem;
+    left: -2.5rem;
+}
+
+.popular__title,
+.popular__subtitle,
+.popular__img {
+    position: relative;
+}
+
+.popular__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: .25rem;
+}
+
+.popular__subtitle {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.popular__img {
+    width: 460px;
+    margin: .75rem 0 1.25rem 0;
+    transition: .3s;
+}
+
+.popular__data {
+    display: grid;
+    grid-template-columns: repeat(2, 90px);
+    gap: .5rem 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.popular__data-group {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: var(--smaller-font-size);
+    color: var(--white-color);
+}
+
+.popular__data i {
+    font-size: 1rem;
+}
+
+.popular__price {
+    font-size: var(--h3-font-size);
+}
+
+.popular__button {
+    border: none;
+    outline: none;
+    padding: .75rem 1rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem 0 1rem 0;
+    cursor: pointer;
+}
+
+.popular__button i {
+    font-size: 1.25rem;
+}
+
+.popular__card:hover .popular__img {
+    transform: translateY(-.25rem);
+}
+
+/*=================================Featured==========================================*/
+.featured__container {
+    padding-top: 1rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: var(--h1-font-size);
+    margin-bottom: 1.5rem;
+}
+
+.featured__filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-bottom: 3.5rem;
+}
+
+.featured__item {
+    width: 48px;
+    height: 28px;
+    border: none;
+    outline: none;
+    padding: .1rem;
+    border-radius: .5rem;
+    background-color: rgb(184, 184, 184);
+    color: black;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.featured__item span,
+.featured__item img {
+    transition: .3s;
+}
+
+.featured__item:hover {
+    background-color: rgb(86, 89, 255);
+}
+
+.featured__content {
+    grid-template-columns: 228px;
+    row-gap: 2.5rem;
+    justify-content: center;
+}
+
+.featured__card {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 2rem 1.5rem 1.5 rem;
+    border-radius: 1rem;
+}
+
+.featured__card .shape__smaller {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+
+.featured__title,
+.featured__subtitle,
+.featured__img {
+    position: relative;
+}
+
+.featured__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: .25rem;
+}
+
+.featured__subtitle {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+.featured__img {
+    width: 280px;
+    margin: 1.5rem 0;
+    transition: .3s;
+}
+
+.featured__price {
+    font-size: var(--h3-font-size);
+}
+
+.featured__button {
+    border: none;
+    outline: none;
+    padding: .75rem 1rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem 0 1rem 0;
+    cursor: pointer;
+}
+
+.featured__button i {
+    font-size: 1.25rem;
+}
+
+.featured__card:hover .featured__img {
+    transform: translateY(-.25rem);
+}
+
+/*=================Active link Featured===================*/
+.active-featured {
+    background-color: var(--first-color);
+}
+
+.active-featured span,
+.active-featured img {
+    opacity: 1;
+}
+
+/*=================================Offer=========================================*/
+.offer {
+    position: relative;
+}
+
+.offer__container {
+    grid-template-rows: max-content 224px;
+}
+
+.offer__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.offer__data,
+.offer__img {
+    position: relative;
+}
+
+.offer__data {
+    text-align: center; 
+}
+
+.offer__title {
+    margin-bottom: .5rem;
+}
+
+.offer__description {
+    margin-bottom: 1.5rem;
+}
+
+.offer__img {
+    position: absolute;
+    max-width: initial;
+    width: 600px;
+    bottom: 2rem;
+    right: 5.5rem;
+}
+
+/*=================================logos=========================================*/
+.logos__img {
+    width: 100px;
+    opacity: .5;
+    transition: .3s;
+}
+
+.logos__container {
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-bottom: 2rem;
+}
+
+.logos__img:hover {
+    opacity: 1;
+}
+
+/*=================================footer=========================================*/
+.footer {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer .shape__big,
+.footer .shape__small {
+    position: absolute;
+}
+
+.footer .shape__big {
+    width: 300px;
+    height: 300px;
+    left: -12rem;
+    top: 6rem;
+}
+
+.footer .shape__small {
+    right: -13rem;
+    bottom: -6rem;
+}
+
+.footer__container {
+    row-gap: 2.5rem;
+    position: relative;
+}
+
+.footer__logo {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    color: var(--title-color);
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 1.25rem;
+    transition: .3s;
+}
+
+.footer__logo i {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.footer__logo:hover {
+    color: var(--first-color);
+}
+
+.footer__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 1.25rem;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.footer__link {
+    color: var(--text-color);
+    transition: .3s;
+}
+
+.footer__link:hover {
+    color: var(--title-color);
+}
+
+.footer__copy {
+    display: block;
+    margin-top: 4.5rem;
+    text-align: center;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color);
+}
+
+/*=================================scroll bar=========================================*/
+::-webkit-scrollbar {
+    width: .6rem;
+    background-color: hsl(219, 4%, 16%);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(219, 4%, 26%);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(219, 4%, 36%);
+    border-radius: 1rem;
+}
